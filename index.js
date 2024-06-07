@@ -13,3 +13,9 @@ const PORT = 5000;
 app.listen(PORT, () => {
     console.log(`The server is up & running on port ${PORT}`);
 });
+
+//creating a test route
+app.get("/", (req, res) => 
+{
+    res.send("Route works")
+});
