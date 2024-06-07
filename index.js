@@ -2,4 +2,4 @@
 const express = require("express");
 
 //creating an instance of the Express application.
-const app = express()
+const app = express();
