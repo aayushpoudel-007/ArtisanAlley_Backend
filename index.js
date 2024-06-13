@@ -1,5 +1,6 @@
 //importing Express to this Node.js application.
 const express = require("express");
+const connectDB = require("./database/db");
 
 //creating an instance of the Express application.
 const app = express();
@@ -19,3 +20,5 @@ app.get("/", (req, res) =>
 {
     res.send("Route works")
 });
+
+connectDB();
